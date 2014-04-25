@@ -1,0 +1,25 @@
+<html>
+
+<body>
+
+
+<iframe id="myfarme" src="###"></iframe>
+<ul id="ct">
+<li>1b</li>
+<li>2b</li>
+<li>3b</li>
+<li>4b</li>
+<li>5b</li>
+<li>6b</li>
+</ul>
+<script>
+    window.onload = function(){
+        var text = document.getElementById('ct').innerHTML;
+        document.getElementById('myfarme').src="http://192.168.21.140/c.html?content="+encodeURI(text);
+    }
+</script>
+
+
+</body>
+
+</html>
